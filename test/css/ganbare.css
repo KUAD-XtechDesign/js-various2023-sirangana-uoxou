@@ -1,0 +1,142 @@
+html,body,#contents,.wrapper,#back{
+    background-color: #001219;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  header{
+    position: fixed;
+    width: 100%;
+    background-color: #7db7be;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    top: 0;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item {
+    position: relative;
+}
+
+.image {
+    width: 100px; /* 画像の幅を調整してください */
+    height: 100px; /* 画像の高さを調整してください */
+    object-fit: contain;
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px; /* 説明文の幅を調整してください */
+    height: 150px; /* 説明文の高さを調整してください */
+    background-color: rgba(255, 255, 255, 0.8); /* 背景色を調整してください */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.item:hover .description {
+    left: 0;
+}
+
+
+
+.loading-area {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', '游ゴシック Medium', YuGothic, YuGothicM, 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
+
+}
+
+
+.contents {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #224935;
+    z-index: 555;
+
+    
+}
+
+
+.loading-area span {
+    display: inline-block;
+    background-color: #efefef;
+    background-image: linear-gradient(#37bcf8 0 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 100% 0%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    font-size: 4rem;
+    font-weight: bold;
+    animation: water-anime 2s infinite linear;
+    text-transform: uppercase;
+}
+
+.loading-area span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.loading-area span:nth-child(2) {
+    animation-delay: 0.14s;
+}
+
+.loading-area span:nth-child(3) {
+    animation-delay: 0.18s;
+}
+
+.loading-area span:nth-child(4) {
+    animation-delay: 0.22s;
+}
+
+.loading-area span:nth-child(5) {
+    animation-delay: 0.26s;
+}
+
+.loading-area span:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.loading-area span:nth-child(7) {
+    animation-delay: 0.34s;
+}
+
+.loading-area span:nth-child(8) {
+    animation-delay: 0.38s;
+}
+
+.loading-area span:nth-child(9) {
+    animation-delay: 0.4s;
+}
+
+.loading-area span:nth-child(10) {
+    animation-delay: 0.44s;
+}
+
+@keyframes water-anime {
+
+    70%,
+    100% {
+        background-size: 100% 100%;
+    }
+}
